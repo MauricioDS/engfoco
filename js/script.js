@@ -292,10 +292,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <section class="section" style="padding-top: 80px;">
                 <div class="container">
                     <h1 class="section-title section-title--center">Normas Regulamentadoras</h1>
-                    <p style="text-align: center; max-width: 700px; margin: -20px auto 50px; color: var(--text-light); font-size: 1.05rem; line-height: 1.7;">
+                    <p style="text-align: left; margin: -20px 0 25px; color: var(--text-light); font-size: 1.05rem; line-height: 1.7;">
                         A EngFoco oferece treinamentos completos sobre as principais Normas Regulamentadoras (NRs) de Segurança e Saúde no Trabalho, capacitando profissionais e empresas para atuarem em conformidade com a legislação vigente.
                     </p>
-                    <p style="text-align: center; max-width: 700px; margin: -20px auto 50px; color: var(--text-light); font-size: 1.05rem; line-height: 1.7;">
+                    <p style="text-align: left; margin: -20px 0 25px; color: var(--text-light); font-size: 1.05rem; line-height: 1.7;">
                         Conheça as NRs aplicadas pela EngFoco e garanta qualificação, segurança e atendimento às exigências legais por meio de treinamentos especializados.
                     </p>
                     <div class="nr-grid">
