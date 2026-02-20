@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderNrDetail(nr) {
-        const whatsappText = encodeURIComponent(`Olá, gostaria de informações sobre a NR ${nr.numero} - ${nr.titulo}`);
+        const whatsappText = encodeURIComponent(`Olá, gostaria de mais informações sobre o treinamento da NR ${nr.numero} - ${nr.titulo}`);
         const whatsappUrl = `https://wa.me/5594991189447?text=${whatsappText}`;
 
         nrContainer.innerHTML = `
