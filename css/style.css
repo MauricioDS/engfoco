@@ -1098,6 +1098,206 @@ h6 {
   line-height: 1.4;
 }
 
+/* ---------- Team Grid ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  background: var(--white);
+  padding: 35px 25px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.team-card__icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.team-card__icon i {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.team-card__name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 6px;
+}
+
+.team-card__role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.team-card__reg {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+.team-card__desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* ---------- Solar Page ---------- */
+.solar-hero {
+  margin-top: calc(var(--topbar-height) + var(--header-height));
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 80px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.solar-hero__icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+}
+
+.solar-hero__icon i {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.solar-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.solar-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.solar-content {
+  padding: 70px 0;
+}
+
+.solar-content__intro {
+  max-width: 800px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-light);
+  margin-bottom: 50px;
+}
+
+.solar-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.solar-feature {
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.solar-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.solar-feature__icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.solar-feature__icon i {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.solar-feature__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.solar-feature__text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.solar-cta {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: var(--white);
+}
+
+.solar-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.solar-cta p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+.solar-cta .btn-cta {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.solar-cta .btn-cta:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-dark);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 992px) {
   .two-col {
@@ -1122,6 +1322,18 @@ h6 {
 
   .process-steps {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solar-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solar-hero h1 {
+    font-size: 2rem;
   }
 
   .services-list-section__bg {
@@ -1306,6 +1518,26 @@ h6 {
 
   .process-steps {
     grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-features {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-hero {
+    padding: 50px 0;
+  }
+
+  .solar-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .solar-content {
+    padding: 40px 0;
   }
 
   .footer .container {
