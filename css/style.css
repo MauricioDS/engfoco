@@ -1100,9 +1100,15 @@ h6 {
 
 /* ---------- Team Grid ---------- */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+}
+
+.team-card {
+  flex: 0 1 calc(33.333% - 20px);
+  min-width: 280px;
 }
 
 .team-card {
@@ -1209,7 +1215,7 @@ h6 {
 }
 
 .solar-content__intro {
-  max-width: 800px;
+  max-width: 100%;
   font-size: 1.05rem;
   line-height: 1.9;
   color: var(--text-light);
@@ -1217,10 +1223,16 @@ h6 {
 }
 
 .solar-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   margin-bottom: 50px;
+}
+
+.solar-feature {
+  flex: 0 1 calc(33.333% - 17px);
+  min-width: 280px;
 }
 
 .solar-feature {
